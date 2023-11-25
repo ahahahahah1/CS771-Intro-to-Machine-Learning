@@ -1,0 +1,18 @@
+Both the code files expect the following files for input to be present in the same directory as the code file:
+
+- X_seen.npy: containing the training data. Each X_seen[i] contains the training data for ith seen class
+- class_attributes_seen.npy: containing the class attributes for the 40 seen classes
+- class_attributes_unseen.npy: containing the class attributes of the 10 unseen classes
+- Xtest.npy: Containing the test examples
+- Ytest.npy: Containing the correct labels for the test examples
+
+To run the code, simply use the command
+```
+    python3 convex.py
+```
+and
+```
+    python3 regress.py    
+```
+
+The model prints the accuracy as output.
